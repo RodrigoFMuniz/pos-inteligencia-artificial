@@ -42,3 +42,13 @@
     print(words) imprime uma lista de palavras filtradas do texto
     print(type(words)) # Retorna uma <class list>
     print(len(words)) # Retorna o tamanho da lista
+
+#### stopwords
+
+    stops = stopwords.words("portuguese")
+    print(len(stops))
+    print(stops)
+
+    words_wo_stopwords = [w for w in words if w not in stops]
+
+    print(words_wo_stopwords)
