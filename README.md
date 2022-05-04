@@ -22,3 +22,7 @@
     nltk.download('maxent_ne_chunker')
     nltk.download('words')
     nltk.download()
+
+#### Criando um texto base
+
+    texto = "Nós somos feitos de poeiras de estrelas. Nós somos uma maneira de os cosmos se auto conhecer. A imaginação nos leva a mundos que sequer existiram, mas sem ela não vamos a lugar algum."
