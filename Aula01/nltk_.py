@@ -19,3 +19,9 @@ sentencas = sent_tokenize(texto, language="portuguese")
 print(sentencas)
 print(type(sentencas))
 print(len(sentencas))
+
+words = word_tokenize(texto,language="portuguese")
+
+print(words)
+print(type(words))
+print(len(words))
