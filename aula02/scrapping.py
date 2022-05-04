@@ -1,6 +1,7 @@
+import requests
 from bs4 import BeautifulSoup
 
-soup = BeautifulSoup(
-    'https://beautiful-soup-4.readthedocs.io/en/latest/#quick-start', 'html-parser')
+page = requests.get('http://slacksite.com/other/ftp.html')
+soup = BeautifulSoup(page.text, 'html-parser')
 
 print(soup.prettify())
