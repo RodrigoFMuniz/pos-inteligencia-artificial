@@ -11,7 +11,11 @@ nltk.download('wordnet')
 nltk.download('averaged_perceptron_tagger')
 nltk.download('maxent_ne_chunker')
 nltk.download('words')
-nltk.download()
 
 texto = "Nós somos feitos de poeiras de estrelas. Nós somos uma maneira de os cosmos se auto conhecer. A imaginação nos leva a mundos que sequer existiram, mas sem ela não vamos a lugar algum."
-print(texto)
+
+sentencas = sent_tokenize(texto, language="portuguese")
+
+print(sentencas)
+print(type(sentencas))
+print(len(sentencas))
