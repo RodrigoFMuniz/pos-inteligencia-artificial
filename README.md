@@ -34,3 +34,11 @@
     print(sentencas) # imprime uma lista de frases filtradas do texto
     print(type(sentencas)) # Retorna uma <class list>
     print(len(sentencas))# Retorna o tamanho da lista
+
+#### word_tokenize
+
+    words = word_tokenize(texto,language="portuguese")
+
+    print(words) imprime uma lista de palavras filtradas do texto
+    print(type(words)) # Retorna uma <class list>
+    print(len(words)) # Retorna o tamanho da lista
