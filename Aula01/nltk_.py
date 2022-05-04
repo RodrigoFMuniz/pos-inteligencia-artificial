@@ -29,3 +29,7 @@ print(len(words))
 stops = stopwords.words("portuguese")
 print(len(stops))
 print(stops)
+
+words_wo_stopwords = [w for w in words if w not in stops]
+
+print(words_wo_stopwords)
