@@ -25,3 +25,7 @@ words = word_tokenize(texto,language="portuguese")
 print(words)
 print(type(words))
 print(len(words))
+
+stops = stopwords.words("portuguese")
+print(len(stops))
+print(stops)
