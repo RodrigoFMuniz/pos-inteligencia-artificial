@@ -26,3 +26,11 @@
 #### Criando um texto base
 
     texto = "Nós somos feitos de poeiras de estrelas. Nós somos uma maneira de os cosmos se auto conhecer. A imaginação nos leva a mundos que sequer existiram, mas sem ela não vamos a lugar algum."
+
+#### sent_tokenize
+
+    sentencas = sent_tokenize(texto, language="portuguese")
+
+    print(sentencas) # imprime uma lista de frases filtradas do texto
+    print(type(sentencas)) # Retorna uma <class list>
+    print(len(sentencas))# Retorna o tamanho da lista
