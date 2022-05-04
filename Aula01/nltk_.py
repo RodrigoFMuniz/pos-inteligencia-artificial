@@ -33,3 +33,9 @@ print(stops)
 words_wo_stopwords = [w for w in words if w not in stops]
 
 print(words_wo_stopwords)
+
+print(string.punctuation)
+
+texto_wo_stopwords_and_punctuation = [w for w in words_wo_stopwords if w not in string.punctuation]
+
+print (texto_wo_stopwords_and_punctuation)
