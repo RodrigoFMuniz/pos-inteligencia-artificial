@@ -53,3 +53,9 @@ print('Stem PorterSteamer')
 steamer = PorterStemmer()
 stem1 = [steamer.stem(words) for words in texto_wo_stopwords_and_punctuation]
 print(stem1)
+
+print('---------------------------------')
+print('Stem SnowballSteamer')
+steamer2 = SnowballStemmer('portuguese')
+stem2 = [steamer2.stem(words) for words in texto_wo_stopwords_and_punctuation]
+print(stem2)
