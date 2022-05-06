@@ -60,3 +60,13 @@
     texto_wo_stopwords_and_punctuation = [w for w in words_wo_stopwords if w not in string.punctuation]
 
     print (texto_wo_stopwords_and_punctuation)
+
+#### Statistics
+
+    freq = nltk.FreqDist(texto_wo_stopwords_and_punctuation)
+    freq_words = freq.pformat
+
+    if __name__ == "__main__":
+        print(freq.most_common(5))
+        print(freq.most_common(35))
+        print(freq_words)
