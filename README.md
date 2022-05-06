@@ -70,3 +70,40 @@
         print(freq.most_common(5))
         print(freq.most_common(35))
         print(freq_words)
+
+#### Stemming
+
+    from punctuation_ import texto_wo_stopwords_and_punctuation
+
+#### - Texto base
+
+    if __name__ == "__main__":
+        print('---------------------------------')
+        print(texto)
+
+#### - Porter
+
+        print('---------------------------------')
+        print('Stem PorterSteamer')
+        steamer = PorterStemmer()
+        stem1 = [steamer.stem(words)
+                for words in texto_wo_stopwords_and_punctuation]
+        print(stem1)
+
+#### - Snowball
+
+        print('---------------------------------')
+        print('Stem SnowballSteamer')
+        steamer2 = SnowballStemmer('portuguese')
+        stem2 = [steamer2.stem(words)
+                for words in texto_wo_stopwords_and_punctuation]
+        print(stem2)
+
+#### - Lancaster
+
+        print('---------------------------------')
+        print('Stem LancasterSteamer')
+        steamer3 = LancasterStemmer()
+        stem3 = [steamer3.stem(words)
+                for words in texto_wo_stopwords_and_punctuation]
+        print(stem3)
