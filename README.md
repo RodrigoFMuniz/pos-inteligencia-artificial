@@ -107,3 +107,4 @@
         stem3 = [steamer3.stem(words)
                 for words in texto_wo_stopwords_and_punctuation]
         print(stem3)
+### Spacy
